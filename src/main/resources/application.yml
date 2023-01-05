@@ -1,0 +1,75 @@
+#
+#server:
+#  port: 8888
+#spring:
+#  application:
+#    name: "config-server"
+#
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: "https://github.com/sangkyu-bae/msaTest"
+#
+##spring:
+##  application:
+##    name: "config-server"
+##  cloud:
+##    config:
+##      server:
+##        git:
+##          uri: "https://github.com/sangkyu-bae/msaTest"
+##          username: "tkdrb1361@naver.com"
+##          password: "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"
+##          search-paths: config
+##          default-label: master
+##          ignore-local-ssh-settings: true
+##          skip-ssl-validation: true
+##        bus:
+##          enabled:true
+##
+#
+#
+##spring:
+##  application:
+##    name: "config-server"
+##    profiles:
+##  cloud:
+##    config:
+##      server:
+##        git:
+##          uri: "https://github.com/sangkyu-bae/msaTest"
+##          username: "tkdrb1361@naver.com"
+##          password: "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"
+##          search-paths: config
+##          default-label: master
+##          ignore-local-ssh-settings: true
+##          skip-ssl-validation: true
+##        bus:
+##          enabled:true
+#
+#
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: foo
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: foo
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
